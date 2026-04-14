@@ -53,7 +53,7 @@ export default function Hero() {
 
   return (
     <section
-      className="text-center text-white bg-black vh-100 d-flex justify-content-center align-items-center"
+      className="text-center text-white bg-black d-flex justify-content-center align-items-center mt-5"
       id="home"
     >
       <div>
