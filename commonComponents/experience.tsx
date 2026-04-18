@@ -11,7 +11,7 @@ export default function Experience() {
         <div className="mb-5">
           <h5 className="fw-bold">
             Software Engineer 
-            <span className="text-secondary fs-6"> | July 2024 – Present</span>
+            <span className="text-secondary fs-6"> | July 2025 – Present</span>
           </h5>
           <p className="text-secondary mb-3">
             Zyptr Soft Labs Pvt. Ltd. | Bengaluru, India
