@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useEffect, useState } from "react";
 import style from "./Hero.module.css";
@@ -5,9 +6,11 @@ import { SiJavascript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
+import Image from "next/image";
 
 
 export default function Hero() {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const roles = ["Frontend Developer", "React.js", "Next.js", "Node.js"];
 
   const [text, setText] = useState("");
@@ -39,17 +42,17 @@ export default function Hero() {
       setCompleted(true);
       setText(roles.join(" | "));
     }
-  }, [charIndex, index, completed]);
+  }, [charIndex, index, completed, roles]);
 
 
- useEffect(() => {
-  import("bootstrap").then((bootstrap) => {
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-    [...tooltipTriggerList].forEach(
-      (el) => new bootstrap.Tooltip(el)
-    );
-  });
-}, []);
+  useEffect(() => {
+    import("bootstrap").then((bootstrap) => {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      [...tooltipTriggerList].forEach(
+        (el) => new bootstrap.Tooltip(el)
+      );
+    });
+  }, []);
 
   return (
     <section
@@ -57,16 +60,16 @@ export default function Hero() {
       id="home"
     >
       <div>
-        <img
+        <Image
           src="/profile.jpeg"
-          className="rounded-circle mb-4"
-          width="120"
-          height="120"
           alt="profile"
+          width={120}
+          height={120}
+          className="rounded-circle mb-4"
         />
 
         <h1 className="fw-bold">
-          Hi, I'm <span className="text-danger">Sumanth Reddy</span>
+          Hi, I&apos;m <span className="text-danger">Sumanth Reddy</span>
         </h1>
         <h3 className="mt-2">
           {text}
