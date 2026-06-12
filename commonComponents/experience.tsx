@@ -7,14 +7,14 @@ export default function Experience() {
           EXPERIENCE
         </h2>
 
-        {/* ================= ZYPTR ================= */}
+        
         <div className="mb-5">
           <h5 className="fw-bold">
             Software Engineer 
             <span className="text-secondary fs-6"> | July 2025 – Present</span>
           </h5>
           <p className="text-secondary mb-3">
-            Zyptr Soft Labs Pvt. Ltd. | Bengaluru, India
+            SSQUARE INNOVATIONS SOFTLABS PVT LTD. | Bengaluru, India
           </p>
 
           {/* Project 1 */}
