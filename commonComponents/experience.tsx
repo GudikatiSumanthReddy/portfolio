@@ -10,7 +10,7 @@ export default function Experience() {
         
         <div className="mb-5">
           <h5 className="fw-bold">
-            Software Engineer 
+            Software Engineer 1
             <span className="text-secondary fs-6"> | July 2025 – Present</span>
           </h5>
           <p className="text-secondary mb-3">
